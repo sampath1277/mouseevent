@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p><b>Click the button to display the date.</b></p>
+
+<button id="button1" onclick="onclickDisplayDate()">The time is?</button>
+<button id="button2" onmouseover="onmouseoverDisplayDate()">The time is?</button>
+<button id="button3" onmouseout="onmouseoutDisplayDate()"> The time is?</button>
+
+
+<script>
+function onclickDisplayDate() {
+  document.getElementById("demo").innerHTML = Date();
+  document.getElementById("button1").style.color="red";
+}
+function onmouseoverDisplayDate() {
+  document.getElementById("demo").innerHTML = Date();
+  document.getElementById("button2").style.color="blue";
+}
+function onmouseoutDisplayDate() {
+  document.getElementById("demo").innerHTML = Date();
+  document.getElementById("button3").style.color="green";
+}
+
+</script>
+
+<p id="demo"></p>
+
+</body>
+</html> 
